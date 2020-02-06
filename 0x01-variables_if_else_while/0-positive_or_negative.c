@@ -5,8 +5,9 @@
 #include <stdint.h>
 
 /* more headers goes there */
-/* betty style doc for function main goes there */
-
+/**
+ * my_function - This is a description
+ */
 int main(void)
 
 {
