@@ -8,18 +8,18 @@
  */
 int main(void)
 {
-int Last_digit_of;
+char str[] = "Last digit of";
 int n;
 int is;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-Last_digit_of = n % 10;
+is = n % 10;
 
 if (Last_digit_of > 5)
-printf("Last digit of %d is %d and is greater than 5\n", n, Last_digit_of);
+printf("%s %d is %d and is greater than 5\n", str, n, is);
 else if (Last_digit_of == 0)
-printf("Last digit of %d is %d and is 0\n", n, Last_digit_of);
+printf("%s %d is %d and is 0\n", str, n, is);
 else if (Last_digit_of < 6)
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, Last_digit_of);
+printf("%s %d and is less than 6 and not 0\n", str, n, is);
 return (0);
 }
