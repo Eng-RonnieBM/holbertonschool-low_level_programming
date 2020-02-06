@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -13,6 +13,5 @@ int i;
 for (i = '0'; i <= '9'; i++)
 putchar(i);
 putchar('\n');
-
 return (0);
 }
