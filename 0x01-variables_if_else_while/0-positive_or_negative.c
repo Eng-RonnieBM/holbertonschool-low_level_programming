@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <signal.h>
-#include <stdint.h>
 
 /**
  * my_function - This is a description
