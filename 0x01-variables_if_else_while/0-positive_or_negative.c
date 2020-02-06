@@ -4,7 +4,6 @@
 #include <signal.h>
 #include <stdint.h>
 
-/* more headers goes there */
 /**
  * my_function - This is a description
  */
