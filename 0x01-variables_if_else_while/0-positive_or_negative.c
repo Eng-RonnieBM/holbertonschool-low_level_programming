@@ -9,15 +9,13 @@
 int main(void)
 
 {
-int n;
-srand(time(0));
-n = rand() - RAND_MAX / 2;
+char n;
+char l;
 
-if (n > 0)
-printf("%d is positive\n", n);
-else if (n == 0)
-printf("%d is zero\n", n);
-else if (n < 0)
-printf("%d is negative\n", n);
+for(n = '0' ; n <= '9'; n++)
+putchar(n);
+for(l = 'a' ; l <= 'f' ; l++)
+putchar(l);
+putchar('\n');
 return (0);
 }
