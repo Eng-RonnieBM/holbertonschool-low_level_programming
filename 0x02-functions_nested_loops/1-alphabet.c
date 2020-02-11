@@ -1,13 +1,12 @@
-int _putchar(char c)
-
+#include "holberton.h"
 /**
- * print alphabet function.
+ * main - check the code for Holberton School students.
  *
- *
+ * Return: Always 0.
  */
 void print_alphabet(void)
 {
 char i;
-for(i = 'a'; i <= 'z'; i++)
+for (i = 'a'; i <= 'z'; i++)
 _putchar(i);
 }
