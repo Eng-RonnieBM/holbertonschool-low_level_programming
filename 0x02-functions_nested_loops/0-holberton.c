@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "holberton.h"
 int _putchar(char c);
-/*
+/**
  * main - check the code for Holberton School students.
  *
  * Return: Always 0.
