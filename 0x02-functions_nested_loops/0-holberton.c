@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+int _putchar(char c);
 /*
  * main - check the code for Holberton School students.
  *
@@ -7,6 +7,15 @@
  */
 int main(void)
 {
-putchar("Holberton\n");
+_putchar('H');
+_putchar('o');
+_putchar('l');
+_putchar('b');
+_putchar('e');
+_putchar('r');
+_putchar('t');
+_putchar('o');
+_putchar('n');
+_putchar('\n');
 return (0);
 }
