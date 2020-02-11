@@ -1,3 +1,3 @@
 /* holberton.h */
-extern int _putchar(char c);
-extern void print_alphabet();
+int _putchar(char c);
+void print_alphabet();
