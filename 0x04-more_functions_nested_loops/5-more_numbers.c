@@ -1,5 +1,4 @@
 #include "holberton.h"
-int _putchar(char c);
 
 /**
  * more_numbers - prints ten lines of numbers, from 0 to 14.

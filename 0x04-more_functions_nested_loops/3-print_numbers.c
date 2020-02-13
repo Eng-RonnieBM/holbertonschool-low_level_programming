@@ -1,5 +1,4 @@
 #include "holberton.h"
-int _putchar(char c);
 
 /**
  * print_numbers - prints numbers from 0 to 9 then a jump-line.
