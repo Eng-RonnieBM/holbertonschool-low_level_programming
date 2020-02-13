@@ -12,7 +12,7 @@ int s;
 
 if (n > 0)  /* \ is 92, space is 32 */
 {
-for (i = 1; i <= n; i++)
+for (i = 0; i <= (n - 1); i++)
 {
 for (s = 1; s <= i; s++)
 _putchar(32);
