@@ -11,7 +11,7 @@ int i;
 
 if (n > 0)  /* _ is 95 */
 {
-for (i = 0; i <= n; i++)
+for (i = 1; i <= n; i++)
 _putchar(95);
 }
 _putchar('\n');
