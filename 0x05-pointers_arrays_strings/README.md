@@ -1,4 +1,8 @@
-************************************************
-Author: Ronnie Barrios
-Title: 0x05. C - Pointers, arrays and strings.
-************************************************
+*********************************************
+This is project:
+
+0x05. C - Pointers, arrays and strings
+*********************************************
+
+Email_me: ronniealberto@gmail.com
+Name: RONNIE BARRIOS M.
