@@ -17,7 +17,8 @@ for (n = 0; str[n] != '\0'; n++)
 if (n % 2 == 0)
 {
 t = str[n];
-putchar(t);
+_putchar(t);
 }
 }
+ _putchar('\n');
 }
