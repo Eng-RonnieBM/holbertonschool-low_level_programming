@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - reset the value of "n" to 98.
- *
+ * @n: preset value.
  * Return: n = 98.
  */
 
