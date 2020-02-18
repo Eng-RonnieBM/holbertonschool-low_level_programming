@@ -10,6 +10,7 @@
 void _puts(char *str)
 {
 int n;
-for(str[n]; str[n] != '\0'; n++)
-printf("%c", str[n]);
+for (n = 0 ; str[n] != '\0'; n++)
+_putchar(str[n]);
+_putchar('\n');
 }
