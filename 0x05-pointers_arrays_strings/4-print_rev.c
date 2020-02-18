@@ -14,7 +14,7 @@ int d;
 
 for (n = 0; s[n] != '\0'; n++)
 d++;
-for (d = d; d >= 0; d--)
+for (d = d; d >= 1; d--)
 _putchar(s[d]);
 _putchar('\n');
 }
