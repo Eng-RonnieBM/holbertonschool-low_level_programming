@@ -30,7 +30,7 @@ dest[i] = src[counter1];
 counter1++;
 }
 i++;
-dest[i] = '\n';
+dest[i] = '\0';
 
 return (dest);
 }
