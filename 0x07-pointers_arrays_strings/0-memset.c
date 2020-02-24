@@ -15,5 +15,5 @@ unsigned int counter;
 
 for (counter = 0; counter <= n - 1; counter++)
 s[counter] = b;
-return (0);
+return (s);
 }
