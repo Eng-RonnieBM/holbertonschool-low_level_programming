@@ -14,8 +14,12 @@ int counter;
 
 for (counter = 0; s[counter] != '\0'; counter++)
 {
+
 if (s[counter] == c)
+{
 return (&s[counter]);
 }
-return ('0');
+
+}
+return ('\0');
 }
