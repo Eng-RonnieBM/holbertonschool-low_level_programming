@@ -18,8 +18,8 @@ if (s[counter] == c)
 break;
 }
 
-if (s[counter] == '\0')
-return ('\0');
-else
+if (s[counter] != '\0')
 return (&s[counter]);
+else
+return ('\0')
 }
