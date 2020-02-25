@@ -10,16 +10,16 @@
 
 char *_strchr(char *s, char c)
 {
-int counter;
+int i = 0;
 
-for (counter = 0; s[counter] != '\0'; counter++)
+while (*(s + i))
 {
-if (s[counter] == c)
-break;
+if (*(s + i) == c)
+return (s + i);
+i++;
 }
 
-if (s[counter] != '\0')
-return (&s[counter]);
-else
-return ('\0')
+if (c == '\0')
+return (s + i);
+return ('\0');
 }
