@@ -17,5 +17,9 @@ for (counter = 0; s[counter] != '\0'; counter++)
 if (s[counter] == c)
 break;
 }
+
+if (s[counter] == '\0')
+return ('\0');
+else
 return (&s[counter]);
 }
