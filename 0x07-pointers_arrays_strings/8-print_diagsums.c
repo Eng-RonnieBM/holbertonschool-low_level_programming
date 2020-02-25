@@ -1,27 +1,25 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * print_chessboard - prints chessboard
- *@a: 2d array
+ * print_diagsums - prints the sum of 2 diagonals sqrd matrix.
+ * @a: pointer to int array.
+ * @size: size of array.
  *
- * Return: void;
+ * Return: void.
  */
 
-void print_chessboard(char (*a)[8])
+void	print_diagsums(int *a, int size)
 {
-int	i, j;
+int i;
+int sum1 = 0;
+int sum2 = 0;
 
-i = 0;
-while (i < (int) sizeof(a))
+for (i = 0; i < size; i++)
 {
-j = 0;
-while (j < 8)
-{
-printf("%c", a[i][j]);
-j++;
+if (i)
+a += size;
+sum1 += *(a + i);
+sum2 += *(a + (size - i - 1));
 }
-printf("\n");
-i++;
-}
+printf("%d, %d\n", sum1, sum2);
 }
