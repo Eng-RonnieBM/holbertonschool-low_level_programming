@@ -3,8 +3,8 @@
 
 /**
  * _strstr - a function that locates a substring.
- * @a: pointer to main string.
- * @b: pointer to substring.
+ * @haystack: pointer to main string.
+ * @needle: pointer to substring.
  *
  * Return: a pointer to the beginning of the located substring.
  */
