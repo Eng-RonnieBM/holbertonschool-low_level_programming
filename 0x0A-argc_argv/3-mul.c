@@ -24,7 +24,7 @@ exit(EXIT_SUCCESS);
 else
 {
 printf("Error\n");
-return -1;
+return 1;
 }
 
 }
