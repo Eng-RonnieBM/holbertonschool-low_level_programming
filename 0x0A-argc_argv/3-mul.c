@@ -13,12 +13,18 @@
 
 int main(int argc, char **argv)
 {
+
 if (argv[2] != '\0' && argc == 3)
 {
 int n = atoi(argv[1]) * atoi(argv[2]);
-printf("%d\n",n);
-}
-else
-printf("Error\n");
+printf("%d\n", n);
 exit(EXIT_SUCCESS);
+}
+
+else
+{
+printf("Error\n");
+return -1;
+}
+
 }
