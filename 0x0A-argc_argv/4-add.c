@@ -1,49 +1,32 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 
 /**
- * main - a program that multiplies two numbers (passed by argument).
- * @argc: arguments counter.
- * @argv: argument array.
- * Return: multiplication of two numbers.
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: 1 if one of the numbers contains symbols that are not digits,
+ * otherwise return 0
  */
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-int i;
-int add = 0;
-int strings = 0;
+int a, b, addition = 0;
 
-if (argc == 1)
+for (a = 1; a < argc; a++)
 {
-printf("%d\n", 0);
-return (0);
-}
-
-else if (argc > 1)
+for (b = 0; argv[b][b] != '\0'; b++)
 {
-
-for (i = 1; i < argc; i++)
+if (!isdigit(argv[a][b]))
 {
-add += atoi(argv[i]);
-
-if (isalpha(*argv[i]) != 0)
-strings++;
-}
-
-if (strings == 0)
-{
-printf("%d\n", add);
-return (0);
-}
-
-else
 printf("Error\n");
-
-}
 return (1);
+}
+}
+addition += atoi(argv[a]);
+}
+printf("%d\n", addition);
+return (0);
 }
