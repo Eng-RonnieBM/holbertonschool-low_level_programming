@@ -21,7 +21,7 @@ int strings = 0;
 if (argc == 1)
 {
 printf("%d\n", 0);
-exit(EXIT_SUCCESS);
+return (0);
 }
 
 else if (argc > 1)
@@ -38,7 +38,7 @@ strings++;
 if (strings == 0)
 {
 printf("%d\n", add);
-exit(EXIT_SUCCESS);
+return (0);
 }
 
 else
