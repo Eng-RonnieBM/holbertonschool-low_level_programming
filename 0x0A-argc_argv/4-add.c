@@ -1,49 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "holberton.h"
 
 /**
- * main - a program that multiplies two numbers (passed by argument).
- * @argc: arguments counter.
- * @argv: argument array.
- * Return: multiplication of two numbers.
+ * main - Add positive numbers
+ * @argc: The number of command line arguments
+ * @argv: The command line arguments
+ *
+ * Return: 0 if successful, 1 if any arguments are not positive numbers
  */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int i;
-int add = 0;
-int strings = 0;
+unsigned int sum;
 
-if (argc == 1)
-{
-printf("%d\n", 0);
-exit(EXIT_SUCCESS);
-}
-
-else if (argc > 1)
-{
-
+sum = 0;
 for (i = 1; i < argc; i++)
 {
-add += atoi(argv[i]);
-
-if (isalpha(*argv[i]) != 0)
-strings++;
-}
-
-if (strings == 0)
+if (is_positive_number(argv[i]))
 {
-printf("%d\n", add);
-exit(EXIT_SUCCESS);
+sum += atoi(argv[i]);
 }
-
 else
+{
 printf("Error\n");
-
+return (1);
 }
+}
+
+	printf("%u\n", sum);
+
+	return (0);
+}
+
+/**
+ * is_positive_number - Check if a string contains only digits
+ * @number: The string to check
+ *
+ * Return: 1 if string contains only digits, 0 otherwise
+ */
+int is_positive_number(char *number)
+{
+int i;
+
+for (i = 0; number[i] != '\0'; i++)
+	{
+if (!isdigit(number[i]))
+return (0);
+}
+
 return (1);
 }
