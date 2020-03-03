@@ -24,10 +24,11 @@ if (str == NULL)
 p = malloc(counter);
 
 if (p == NULL)
-	return (NULL);
+	return (null);
 
 for (i = 0; i < counter; i++)
 	p[i] = str[i];
+p[i] = '\0';
 
 return (p);
 }
