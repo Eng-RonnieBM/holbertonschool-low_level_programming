@@ -21,6 +21,9 @@ if (size == 0)
 
 arr = malloc(size * sizeof(c));
 
+if (arr == NULL)
+	return (NULL);
+
 for (i = 0; i < size; i++)
 	arr[i] = c;
 
