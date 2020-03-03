@@ -15,21 +15,16 @@ char *p;
 int i;
 int counter = 0;
 
-if (str == NULL)
-	return (NULL);
-
 for (i = 0; str[i] != '\0'; i++)
 	counter++;
 
+if (str == NULL)
+	return (NULL);
+
 p = malloc(counter);
 
-if (p == NULL)
-	return (NULL);
-else
-{
 for (i = 0; i < counter; i++)
 	p[i] = str[i];
-}
 
 return (p);
 }
