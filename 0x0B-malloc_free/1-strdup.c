@@ -21,14 +21,13 @@ for (i = 0; str[i] != '\0'; i++)
 if (str == NULL)
 	return (NULL);
 
-p = malloc(counter);
+p = malloc(counter + 1);
 
 if (p == NULL)
 	return (null);
 
 for (i = 0; i < counter; i++)
 	p[i] = str[i];
-p[i] = '\0';
 
 return (p);
 }
