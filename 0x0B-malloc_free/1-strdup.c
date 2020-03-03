@@ -23,6 +23,9 @@ if (str == NULL)
 
 p = malloc(counter);
 
+if (p == NULL)
+	return (NULL);
+
 for (i = 0; i < counter; i++)
 	p[i] = str[i];
 
