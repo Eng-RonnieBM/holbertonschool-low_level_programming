@@ -17,18 +17,17 @@ int i, counter;
 char *ptr;
 
 if (s1 == NULL)
-	return (NULL);
+	s1 = "";
 
 if (s2 == NULL)
-	return (NULL);
+	s2 = "";
 
-if (strlen(s2) > n)
-	counter = n - 1;
-
-else if (n >= strlen(s2))
+if (n >= strlen(s2))
 	counter = strlen(s2);
+else
+	counter = n;
 
-ptr = malloc(strlen(s1) + counter);
+ptr = malloc(strlen(s1) + counter + 1);
 
 if (ptr == NULL)
 	return (NULL);
@@ -36,7 +35,7 @@ if (ptr == NULL)
 for (i = 0; s1[i] != '\0'; i++)
 	ptr[i] = s1[i];
 
-for (i = 0; i <= counter; i++)
+for (i = 0; i < counter; i++)
 	ptr[i + strlen(s1)] = s2[i];
 
 return (ptr);
