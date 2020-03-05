@@ -44,7 +44,7 @@ for (i = 0; i < counter1; i++)
 for (i = 0; i < n; i++)
 	p[counter1 + i] = s2[i];
 
-p[counter1 + i + 1] = '\0';
+p[counter1 + i] = '\0';
 
 return (p);
 }
