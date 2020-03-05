@@ -18,10 +18,10 @@ int i, counter;
 char *ptr;
 
 if (s1 == NULL)
-	return (NULL);
+	s1 = "";
 
 if (s2 == NULL)
-	return (NULL);
+	s2 = "";
 
 if (sizeof(s2) > n)
 	counter = n;
