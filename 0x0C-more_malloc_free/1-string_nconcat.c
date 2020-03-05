@@ -27,7 +27,7 @@ if (sizeof(s2) > n)
 	counter = n;
 
 else if (n >= sizeof(s2))
-	counter = sizeof(s2);
+	counter = strlen(s2);
 
 ptr = malloc(strlen(s1) + counter);
 
