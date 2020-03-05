@@ -8,12 +8,13 @@
  * @s1: first string.
  * @s2: second string.
  * @n: amount of characters of s2 to be copyed.
+ *
  * Return: a pointer.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int i, counter;
+unsigned int i, counter;
 char *ptr;
 
 if (s1 == NULL)
@@ -38,5 +39,6 @@ for (i = 0; s1[i] != '\0'; i++)
 for (i = 0; i < counter; i++)
 	ptr[i + strlen(s1)] = s2[i];
 
+ptr[i + strlen(s1) + 1] = '\0';
 return (ptr);
 }
