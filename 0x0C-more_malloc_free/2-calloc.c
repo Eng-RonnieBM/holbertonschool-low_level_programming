@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * calloc - a function that allocates memory for an array, using malloc.
+ * _calloc - a function that allocates memory for an array, using malloc.
  * @nmemb: amount of bytes.
  * @size: number of elements.
  *
