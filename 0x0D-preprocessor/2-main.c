@@ -3,7 +3,13 @@
 #define __FILENAME__ (__FILE__)
 #endif
 
-void main(void)
+/**
+ * main - prints the name of the file it was compiled from.
+ *
+ * Return: void.
+ */
+int main(void)
 {
 printf("%s\n", __FILE__);
+return (0);
 }
