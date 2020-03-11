@@ -73,7 +73,7 @@ user->age = age;
 user->owner = malloc(sizeof(char) * (lenght_owner + 1));
 if (user->owner == NULL)
 {
-	free(user->owner);
+	free(user->name);
 	free(user);
 	return (NULL);
 }
