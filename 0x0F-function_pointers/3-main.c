@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	out = f(a, b);
-	printf("%d\n", c);
+	out = f(val1, val2);
+	printf("%d\n", out);
 	return (0);
 }
