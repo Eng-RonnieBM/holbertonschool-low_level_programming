@@ -13,9 +13,9 @@ int sum_them_all(const unsigned int n, ...)
 	int value;
 	va_list parameters;
 
-	va_start(parameters, n);
 	if (n == 0)
 		return (0);
+	va_start(parameters, n);
 	num = 0;
 	for (i = 0; i < n; i++)
 	{
