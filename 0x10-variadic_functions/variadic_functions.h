@@ -2,13 +2,13 @@
 #define _VARIADIC_FUNCTIONS_H_
 
 /**
- * struct wrapper - it links to a function.
+ * struct wrap - it links to a function.
  * @character: a character that represents type of data.
  * @ptrfunc: pointer to a function.
  *
  * Description: a organized struct.
  */
-typedef struct
+typedef struct wrap
 {
 	char *character;
 	void (*ptrfunc)();
