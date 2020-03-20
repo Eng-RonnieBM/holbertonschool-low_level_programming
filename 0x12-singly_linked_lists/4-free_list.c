@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "lists.h"
 
 /**
  * free_list - it makes free memory to a list_t list.
