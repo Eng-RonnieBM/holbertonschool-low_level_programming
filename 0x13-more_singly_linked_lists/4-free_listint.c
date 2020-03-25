@@ -8,15 +8,11 @@
 void free_listint(listint_t *head)
 {
 	listint_t *copy;
-	listint_t *next;
 
-	copy = head;
-
-	while (copy != NULL)
+	while (head != NULL)
 	{
-		next = copy->next;
-		free(copy->n);
+		copy = head;
+		head = head->next;
 		free(copy);
-		copy = next;
 	}
 }
