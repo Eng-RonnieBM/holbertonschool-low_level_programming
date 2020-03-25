@@ -11,27 +11,9 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		_print(h->n);
-		_putchar('\n');
+		printf("%d\n", h->n);
 		i++;
 		h = h->next;
 	}
 	return (i);
-}
-
-/**
- * _print - prints a number using _putchar.
- * @n: number to be printed.
- * Return: void.
- */
-void _print(int n)
-{
-	if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-	}
-	if (n / 10 != 0)
-		_print(n / 10);
-	_putchar((n % 10) + '0');
 }
