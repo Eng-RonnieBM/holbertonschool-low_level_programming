@@ -10,23 +10,12 @@ int pop_listint(listint_t **head)
 {
 	int i;
 	listint_t *copy;
-	listint_t *temp;
 
 	if (head == NULL)
 		return (0);
-	if (copy == NULL)
-		return (0);
-	if (temp == NULL)
-		return (0);
-	temp = *head;
+	i = (*head)->n;
 	copy = *head;
-	if (*head)
-	{
-		i = copy->n;
-		*head = copy->next;
-		free(temp);
-	}
-	else
-		i = 0;
+	*head = (*head)->next;
+	free(copy);
 	return (i);
 }
