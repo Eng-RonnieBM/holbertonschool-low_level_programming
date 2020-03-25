@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 
 /**
   * pop_listint - deletes the head node of a listint_t linked list.
@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 
 	if (head == NULL)
 		return (0);
-	tmp = copy = *head;
+	temp = copy = *head;
 	if (*head)
 	{
 		i = copy->n;
