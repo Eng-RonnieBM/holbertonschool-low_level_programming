@@ -14,6 +14,10 @@ int pop_listint(listint_t **head)
 
 	if (head == NULL)
 		return (0);
+	if (copy == NULL)
+		return (0);
+	if (temp == NULL)
+		return (0);
 	temp = *head;
 	copy = *head;
 	if (*head)
