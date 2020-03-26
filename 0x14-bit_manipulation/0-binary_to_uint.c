@@ -7,9 +7,10 @@
  * Return: power of a number.
  */
 
-unsigned int _pow(unsigned int a, unsigned b)
+unsigned int _pow(unsigned int a, unsigned int b)
 {
 	unsigned int result = 1;
+
 	if (b == 0)
 		return (1);
 	while (b > 0)
