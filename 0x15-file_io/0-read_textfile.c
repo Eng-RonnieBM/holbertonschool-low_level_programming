@@ -1,6 +1,12 @@
 #include "holberton.h"
 
-/*where letters is the number of letters it should read and print*/
+/**
+ * read_textfile - reads a text file and prints it to the POSIX stdout.
+ * @filename: name of file.
+ * @letters: number of letters.
+ * Return: Always 0.
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, chars;
@@ -30,8 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		return (0);
 	}
-
-	chars = write(2, buf, bytes);
+	chars = write(STDIN_FILENO, buf, bytes);
 	free(buf);
 	/*if write fails or does not write the expected amount of bytes, return 0.*/
 	if (chars == -1)
