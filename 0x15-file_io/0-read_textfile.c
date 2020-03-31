@@ -30,6 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	/*read the file*/
 	bytes = read(fd, buf, letters);
+	buf[bytes] = '\0';
 	close(fd);
 	if (bytes == -1)
 	{
