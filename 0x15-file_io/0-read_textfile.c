@@ -26,7 +26,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		close(fd);
 		return (0);
-
 	}
 	/*read the file*/
 	bytes = read(fd, buf, letters);
@@ -37,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		return (0);
 	}
-	chars = write(STDIN_FILENO, buf, bytes);
+	chars = write(STDOUT_FILENO, buf, bytes);
 	free(buf);
 	/*if write fails or does not write the expected amount of bytes, return 0.*/
 	if (chars == -1)
