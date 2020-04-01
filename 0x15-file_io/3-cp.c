@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		dprintf(STDERR, "usage: ./cp file_origin file_dest\n");
+		dprintf(STDERR, "usage: cp file_origin file_dest\n");
 		exit(97);
 	}
 	_copy(argv[1], argv[2]);
