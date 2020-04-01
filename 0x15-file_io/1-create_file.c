@@ -20,7 +20,6 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 	{
 		close(fd);
-		write(STDOUT_FILENO, "fails", 5);
 		return (-1);
 	}
 	/*if content = NULL, create empty file, else write content*/
