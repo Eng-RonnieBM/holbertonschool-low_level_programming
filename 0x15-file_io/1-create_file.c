@@ -23,14 +23,13 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	/*if content = NULL, create empty file, else write content*/
-	if (text_content != NULL)
-	{
-		while (text_content[i] != '\0')
-			i++;
-		chars = write(fd, text_content, i);
-	}
+	if (text_content == NULL)
+		return (1);
+	while (text_content[i] != '\0')
+		i++;
+	chars = write(fd, text_content, i);
 	close(fd);
-	if (chars == -1 || chars != i)
+	if (chars == -1)
 		return (-1);
 	return (1);
 }
