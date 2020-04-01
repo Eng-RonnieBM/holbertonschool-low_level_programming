@@ -8,7 +8,8 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, chars;
+	int fd;
+	ssize_t chars, i;
 
 	/*if buffer or filename = NULL, then return 0.*/
 	if (filename == NULL)
@@ -23,12 +24,16 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	/*if content = NULL, create empty file, else write content*/
-	if (text_content == NULL)
+	if (text_content != NULL)
 		chars = write(fd, "", 1);
 	else
-		chars = write(fd, text_content, strlen(text_content));
+	{
+		while (text_content[i] != '\0')
+			i++;
+		chars = write(fd, text_content, i);
+	}
 	close(fd);
-	if (chars == -1)
+	if (chars != i)
 		return (-1);
 	return (1);
 }
