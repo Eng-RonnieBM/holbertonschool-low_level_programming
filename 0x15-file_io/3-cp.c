@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 void _copy(char *file_orig, char *file_dest)
 {
-	int fdes1, fdes2, read_val, write_val;
+	int fd1, fd2, read_val, write_val;
 	char buffer[MAXVAL]; /*max. read bytes per time (1024 bytes).*/
 
 	fd1 = open(file_orig, O_RDONLY);
