@@ -48,7 +48,7 @@ void _copy(char *file_orig, char *file_dest)
 			_exitprint("Error: Can't read from file %s\n", file_orig, 98);
 		write_val = write(fd2, buffer, read_val);
 		if (write_val == -1)
-			_exitprint("Error: Can't write to %s\n", file_dest, 99);
+			_exitprint("Error: Can't write to %s\n", file_dest, 98);
 	}
 	if (read_val == -1)
 		_exitprint("Error: Can't read from file %s\n", file_orig, 98);
