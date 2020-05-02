@@ -5,7 +5,7 @@
  *
  * @h: head of node.
  * @idx: index to append data into dlistint_t list.
- *
+ * @n: data to be inserted.
  * Return: head of the dlistint_t list.
  */
 
@@ -32,7 +32,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (add_dnodeint_end(h, n));
 	}
-
 	else
 	{
 		new = malloc(sizeof(dlistint_t));
