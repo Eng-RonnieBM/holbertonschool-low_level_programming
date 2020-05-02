@@ -19,7 +19,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(copy_head);
 		return (1);
 	}
-	while(index > 1 && copy_head && copy_head->next)
+	while(index > 1 && copy_head != NULL && copy_head->next != NULL)
 	{
 		copy_head = copy_head->next;
 		index--;
